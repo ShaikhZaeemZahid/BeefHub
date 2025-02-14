@@ -1,0 +1,46 @@
+html {
+    scrollbar-width: thin;
+    scrollbar-color: #ff7300 #000;
+  }
+
+.backgroundOne{
+  /* background: rgb(65,44,5);
+background: linear-gradient(40deg, rgba(65,44,5,1) 0%, rgba(0,0,0,1) 15%, rgba(9,6,0,1) 86%, rgba(65,44,5,1) 100%); */
+background: rgb(175,90,9);
+background: linear-gradient(90deg, rgba(175,90,9,1) 0%, rgba(0,0,0,1) 15%, rgba(0,0,0,1) 92%, rgba(175,90,9,1) 100%);
+}
+
+
+  .sideNavShow{
+
+    animation: showSidenav 1s ease forwards;
+  }
+  .sideNavHide{
+
+
+    animation: hideSideNav 1s ease forwards;
+  }
+
+  @keyframes showSidenav{
+    0%{
+        right: -250px;
+    }
+    100%{
+      right: 0px;
+
+    }
+  }
+  @keyframes hideSideNav{
+    0%{
+        right: 0px;
+    }
+    100%{
+      right: -250px;
+
+    }
+  }
+
+  .BackgroundImageHandler{
+    background-size: 100% 100%;
+    background-position: center;
+}
